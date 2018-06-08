@@ -120,6 +120,7 @@ public class Main {
         FourtQuestion test = new FourtQuestion();
         test.printTheBoard();
         System.out.println();
+        test.printLocations();
         //Print the result
         System.out.println("Sonuç : En fazla " + test.getKnightCount() + " tane at konabilir.");
     }

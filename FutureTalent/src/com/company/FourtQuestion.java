@@ -53,8 +53,27 @@ public class FourtQuestion {
 
     public void printTheBoard(){
         for (int i = 0; i <8 ; i++) {
+            System.out.print((8-i) + " ");
             for (int j = 0; j <8; j++) {
                 System.out.print(chessBoard[i][j]);
+            }
+            System.out.println();
+        }
+        System.out.print("  ");
+        for (int i = 0; i < 8; i++) {
+            System.out.print((char)(65+i));
+        }
+        System.out.println();
+    }
+
+    public void printLocations(){
+        int k = 1;
+        for (int i = 7; i >=0 ; --i) {
+            for (int j = 0; j <8; j++) {
+                if(chessBoard[i][j] == 'K'){
+                    System.out.println("At"+k+" "+(char)(65+j)+(8-i));
+                    ++k;
+                }
             }
             System.out.println();
         }
