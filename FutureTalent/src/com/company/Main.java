@@ -117,7 +117,7 @@ public class Main {
         System.out.println();
         System.out.println("Satranç Tahtası : ");
         System.out.println();
-        FourtQuestion test = new FourtQuestion();
+        FourthQuestion test = new FourthQuestion();
         test.printTheBoard();
         System.out.println();
         test.printLocations();
