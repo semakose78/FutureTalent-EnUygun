@@ -24,6 +24,8 @@ public class FourthQuestion {
         }
     }
 
+    //Every horse in the black box eats only the hourses that occures in the white box
+    //So, if we place all the horses to the black boxes, that would be the optimum solution for this problem
     private void placeTheMoves(int i, int j){
         if(i-2 >= 0){
             if(j-1 >= 0)
